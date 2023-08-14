@@ -7,12 +7,12 @@
     Открыта страница регистрации "Sign Up"
   test-data: |
     "Nickname" = Ivan Ivanov
-    «Email» = ivan@ivanov.com
+    «Email» = ivan@gmail.com
     «Password» = edX*12
     «Password Confirmation» = edX*12
   steps:
     - Заполнить поле «Nickname». Значение «Ivan Ivanov»
-    - Заполнить поле «Email». Значение «ivan@ivanov.com»
+    - Заполнить поле «Email». Значение «ivan@gmail.com»
     - Заполнить поле «Password». Значение «edX*12»
     - Заполнить поле «Password Confirmation». Значение «edX*12»
     - Нажать кнопку «Submit»    
@@ -26,10 +26,10 @@
   prerequisites: |
     Открыта страница авторизации "Sign In"
   test-data: |
-    «Email» = ivan@ivanov.com
+    «Email» = ivan@gmail.com
     «Password» = edX*12
   steps:
-    - Заполнить поле «Email». Значение «ivan@ivanov.com»
+    - Заполнить поле «Email». Значение «ivan@gmail.com»
     - Заполнить поле «Password». Значение «edX*12»
   expected-result: |
     Авторизация прошла успешно, пользователь перенаправлен на главную страницу
@@ -87,28 +87,6 @@
     - Нажать кнопку "Python 3.11.4"
   expected-result: |
     Отображается выбранный язык программирования из шага 2
-
-- summary: |
-    Проверка возможности выбрать время ограничения игры
-  requirement: |
-    Пользователь должен иметь возможность выбрать время ограничения игры
-  prerequisites:
-    Пользователь авторизован и открыта главная страница сайта
-  test-data: |
-    "Level" = Две звезды
-    "Game Type" = With a bot
-    Time control = Неограниченное
-    Choose task by name or tags = rect_area    
-  steps:
-    - Нажать на кнопку "Create a game" на главной странице сайта
-    - Нажать на картинку "Две звезды"
-    - Под надписью "Game Type" выбрать "With a bot"  
-    - С помощью ползунка "Time control" выбрать время "Неограниченное" 
-    - Нажать на список "random_task" под надписью "Choose task by name or tags"
-    - Выбрать "rect_area"
-    - Нажать на кнопку "Create battle"
-  expected-result: |
-    Отображается страница игры с выбранными параметрами на шагах 2, 3, 4, 6
 
 - summary: |
     Проверка возможности переподключиться в игру в любой момент, пока она не закончена, если он вылетел из нее
