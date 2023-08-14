@@ -11,11 +11,11 @@
     «Password» = edX*12
     «Password Confirmation» = edX*12
   steps:
-    - Заполнить поле: «Nickname». Значение: «Ivan Ivanov»
-    - Заполнить поле: «Email». Значение: «ivan@ivanov.com»
-    - Заполнить поле: «Password». Значение: «edX*12»
-    - Заполнить поле: «Password Confirmation». Значение: «edX*12»
-    - Нажать кнопку: «Submit»    
+    - Заполнить поле «Nickname». Значение «Ivan Ivanov»
+    - Заполнить поле «Email». Значение «ivan@ivanov.com»
+    - Заполнить поле «Password». Значение «edX*12»
+    - Заполнить поле «Password Confirmation». Значение «edX*12»
+    - Нажать кнопку «Submit»    
   expected-result: |
     Регистрация прошла успешно, пользователь перенаправлен на главную страницу
     
@@ -29,8 +29,8 @@
     «Email» = ivan@ivanov.com
     «Password» = edX*12
   steps:
-    - Заполнить поле: «Email». Значение: «ivan@ivanov.com»
-    - Заполнить поле: «Password». Значение: «edX*12»
+    - Заполнить поле «Email». Значение «ivan@ivanov.com»
+    - Заполнить поле «Password». Значение «edX*12»
   expected-result: |
     Авторизация прошла успешно, пользователь перенаправлен на главную страницу
 
