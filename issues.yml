@@ -1,1 +1,5 @@
-issues: []
+---
+- issues: |
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/1511"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/1588"
+  - url: "https://github.com/hexlet-codebattle/codebattle/issues/1590"
